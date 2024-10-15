@@ -50,31 +50,32 @@ const Login = () => {
 
   return (
     <>
-      <div className="form">
-        <div className='form-item'>
-          <div className='form-item-title'>手机号</div>
+      <div className="mb-[.6rem]">
+        <div className='flex py-[.16rem] pl-[.3rem] pr-[.3rem] leading-[.24rem] text-[.16rem]'>
+          <div className='w-[.7rem] mr-[.2rem]'>手机号</div>
           <input
             value={phoneNumber}
-            className='form-item-content'
+            className='flex-auto border-none outline-0 text-[#242424] placeholder-[#D9D9D9]'
             placeholder='请输入手机号码'
             onChange={(e) => { setPhoneNumber(e.target.value) }}
           />
         </div>
-        <div className='form-item'>
-          <div className='form-item-title'>密码</div>
+        <div className='flex py-[.16rem] pl-[.3rem] pr-[.3rem] leading-[.24rem] text-[.16rem]'>
+          <div className='w-[.7rem] mr-[.2rem]'>密码</div>
           <input
             value={password}
             type="password"
-            className='form-item-content'
+            className='flex-auto border-none outline-0 text-[#242424] placeholder-[#D9D9D9]'
             placeholder='请输入密码'
             onChange={(e) => { setPassword(e.target.value) }}
           />
         </div>
       </div>
-      <div className="submit" onClick={handleSubmitBtnClick}>
+      {/* margin: 0 .3rem .94rem .3rem; */}
+      <div className="my-0 mr-[.3rem] mb-[.94rem] ml-[.3rem] leading-[.5rem] rounded bg-[#73D13D] shadow-[0_.06rem_0.06rem_0_#D9F7BE] text-[.16rem] text-[#fff] text-center" onClick={handleSubmitBtnClick}>
         登陆
       </div>
-      <p className="notice">
+      <p className="text-[#cf1322] text-[.16rem] leading-[.24rem] tracking-normal text-center">
         *登录即表示您赞同使用条款及隐私政策
       </p>
     </>

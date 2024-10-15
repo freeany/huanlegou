@@ -1,7 +1,9 @@
 import { RouterProvider } from 'react-router-dom';
 import 'normalize.css';
+import './styles/index.css'
 import './styles/border.css';
 import './styles/base.css';
+
 import { router } from './router'
 
 
