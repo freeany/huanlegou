@@ -9,6 +9,10 @@ module.exports = {
         '1500': '1500ms',
       },
     },
+    colors: {
+      red: '#000',
+      "main-color": "#ff7849",
+    },
   },
   plugins: [],
 }

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .account-form--item {
+    @apply flex py-[.16rem] pl-[.3rem] pr-[.3rem] leading-[.24rem] text-[.16rem];
+  }
+  .account-form--item__label {
+    @apply w-[.7rem] mr-[.2rem];
+  }
+  .account-form--item__input {
+    @apply flex-auto border-none outline-0 text-[#242424] placeholder-[#D9D9D9];
+  }
+  .account-form--item__btn {
+    @apply mt-0 mx-[.3rem] mb-[.94rem] leading-[.5rem] rounded bg-[#73D13D] shadow-[0_.06rem_0.06rem_0_#D9F7BE] text-[.16rem] text-[#fff] text-center
+  }
+}
